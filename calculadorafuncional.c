@@ -41,7 +41,9 @@ int main()
       printf("Digite o segundo numero: ");
       scanf("%f",&numero2);
 
-      printf("Sua Resposta e: %.2f\n",calculadora(numero1,numero2,operator));
+      int resp =  calculadora(numero1,numero2,operator);
+
+      printf("Sua Resposta e: %.2f\n",resp);
 
       printf("Deseja continuar ?\n");
       char resp;
