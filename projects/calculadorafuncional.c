@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 float calculadora (float n1, float n2, char op){
    float resp;
@@ -74,6 +75,7 @@ int main()
       scanf(" %c",&resp);
 
       if(resp == 's'){
+         system("cls");
          printf("Continue...\n");
       }
       else{
