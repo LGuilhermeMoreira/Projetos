@@ -1,3 +1,4 @@
+// corrigir o problema de horario relacionado a time.h
 #include<time.h>
 #include<stdio.h>
 #include<stdlib.h>
