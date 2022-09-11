@@ -15,13 +15,13 @@ Time le_jogador()
     Time a;
     cin.ignore();
 
-    cout << "digite o nome: ";
+    cout << "Digite o nome: ";
     getline(cin, a.nome);
 
-    cout << "digite a posicao: ";
+    cout << "Digite a posicao: ";
     getline(cin, a.posicao);
 
-    cout << "digite o numero da camisa: ";
+    cout << "Digite o numero da camisa: ";
     cin >> a.numero;
 
     cout << endl;
@@ -62,7 +62,7 @@ Time *remove_jogador(Time *v, int *n, int num)
     }
 
     system("cls");
-    cout << "nao ha nenhum jogador com esse numero na camisa" << endl;
+    cout << "Nao ha nenhum jogador com esse numero na camisa" << endl;
     return v;
 }
 
@@ -88,18 +88,18 @@ int main()
     int tamanho = 0, resp = 0;
     Time *selecao = 0;
 
-    cout << "opa! Esse e meu projeto de alocacao dinamica!" << endl
+    cout << "Opa! Esse e meu projeto de alocacao dinamica!" << endl
          << endl;
 
     do
     {
 
-        cout << "informe o que deseja" << endl
+        cout << "Informe o que deseja" << endl
              << endl
-             << "1 - adicionar um jogador ao time" << endl
-             << "2 - expulsar um jogador do time" << endl
-             << "3 - mostrar os jogadores convocados" << endl
-             << "4 - encerrar" << endl
+             << "1 - Adicionar um jogador ao time" << endl
+             << "2 - Expulsar um jogador do time" << endl
+             << "3 - Mostrar os jogadores convocados" << endl
+             << "4 - Encerrar" << endl
              << endl;
         cin >> resp;
 
@@ -114,7 +114,7 @@ int main()
             system("cls");
             int numero__;
             mostra_elenco(selecao, &tamanho);
-            cout << "informe o numero que deseja expulsar: ";
+            cout << "Informe o numero que deseja expulsar: ";
             cin >> numero__;
             selecao = remove_jogador(selecao, &tamanho, numero__);
             cout << endl;
@@ -126,5 +126,5 @@ int main()
 
     } while (resp != 4);
 
-    cout << "Valeu!" << endl;
+    cout << "Valeu!" << endl; // fim!
 }
