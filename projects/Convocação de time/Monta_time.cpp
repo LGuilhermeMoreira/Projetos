@@ -68,6 +68,7 @@ Time *remove_jogador(Time *v, int *n, int num)
 
 void mostra_elenco(Time *v, int *n)
 {
+    system("cls");
     cout << "----------------------------------------------------------------" << endl;
     for (int i = 0; i < *n; i++)
     {
@@ -76,8 +77,9 @@ void mostra_elenco(Time *v, int *n)
         cout << "Numero: " << v[i].numero << endl;
         cout << "----------------------------------------------------------------" << endl;
     }
-    if (n == 0)
+    if (*n == 0)
     {
+        //cout << "----------------------------------------------------------------" << endl;
         cout << "Nao tem ninguem convocado!" << endl;
         cout << "----------------------------------------------------------------" << endl;
     }
